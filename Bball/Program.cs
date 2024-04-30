@@ -42,7 +42,6 @@ namespace Basketball
             Partizan.AddStaff(ZO);
             Partizan.AddStaff(BCA);
             Partizan.AddStaff(PZ);
-            Partizan.AddStaff(ZO);
             Partizan.AddStaff(AM);
             Partizan.AddStaff(MM);
 
