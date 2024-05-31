@@ -10,7 +10,7 @@ namespace Basketball
     public class Game
     {
 
-        private int minplayers = 8;
+        private int mingameplayers = 8;
         public string competition;
         public DateTime DGame;
 
@@ -70,7 +70,7 @@ namespace Basketball
                         Console.WriteLine(string.Empty);
                     }
 
-                    else if (t1.p.Count < minplayers && t1.p.Count > 0 || t2.p.Count < minplayers && t2.p.Count > 0)
+                    else if (t1.p.Count < mingameplayers && t1.p.Count > 0 || t2.p.Count < mingameplayers && t2.p.Count > 0)
                     {
                         Console.WriteLine("Not enough players in one of the team to play this game !!!");
                     }
