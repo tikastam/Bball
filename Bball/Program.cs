@@ -23,14 +23,20 @@ namespace Basketball
             Player JN = new Player(21, "James", "Nunnaly", "SF", 201, 34);
             Player ZL = new Player(2, "Zach", "Leday", "PF", 202, 30);
             Player BC = new Player(50, "Bruno", "Caboclo", "C", 206, 29);
+            Player FC = new Player(22, "Frank", "Kaminsky", "C", 212, 31);
+            Player AS = new Player(8, "Alen", "Smailagic", "PF", 207, 23);
+            Player MP = new Player(14, "Mateusz", "Ponitka", "SF", 198, 31);
 
             Partizan.AddPlayer(AA);
             Partizan.AddPlayer(KP);
             Partizan.AddPlayer(JN);
             Partizan.AddPlayer(ZL);
             Partizan.AddPlayer(BC);
-            
-            
+            Partizan.AddPlayer(FC);
+            Partizan.AddPlayer(AS);
+            Partizan.AddPlayer(MP);
+
+
 
 
             Staff ZO = new Staff("Zeljko", "Obradovic", "HeadCoach");
@@ -55,12 +61,18 @@ namespace Basketball
             Player DM = new Player(31, "Dzanan", "Musa", "SF", 205, 25);
             Player MH = new Player(11, "Mario", "Hezonja", "PF", 203, 29);
             Player WT = new Player(22, "Walter", "Tavares", "C", 221, 32);
+            Player FCA = new Player(8, "Facundo", "Campazo", "C", 180, 32);
+            Player GD = new Player(14, "Gabriel", "Deck", "PF", 200, 32);
+            Player GY = new Player(55, "Gerson", "Yabusele", "PF", 202, 28);
 
             RealMadrid.AddPlayer(SL);
             RealMadrid.AddPlayer(SR);
             RealMadrid.AddPlayer(DM);
             RealMadrid.AddPlayer(MH);
             RealMadrid.AddPlayer(WT);
+            RealMadrid.AddPlayer(FCA);
+            RealMadrid.AddPlayer(GD);
+            RealMadrid.AddPlayer(GY);
 
             Staff CM = new Staff("Cus", "Mateo", "HeadCoach");
 
