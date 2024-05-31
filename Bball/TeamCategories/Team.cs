@@ -7,7 +7,7 @@ using Bball.Help;
 
 namespace Basketball
 {
-    public class Team
+    public partial class Team
     {
         public List<Player> p = new List<Player>();
 

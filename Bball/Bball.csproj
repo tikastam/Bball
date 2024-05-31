@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="Help\EnHelp.cs" />
+    <Compile Include="Help\Team.cs" />
     <Compile Include="Personnel\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
