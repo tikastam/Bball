@@ -26,9 +26,7 @@ namespace Basketball
 
         private List<Player> pwd = new List<Player>();
 
-        private List<string> invalidinputstaff = new List<string>();
-
-        public bool cotrue;
+        public List<string> invalidinputstaff = new List<string>();
 
         private const string tt = "Seniors";
 

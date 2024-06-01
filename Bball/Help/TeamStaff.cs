@@ -8,17 +8,7 @@ using System.Threading.Tasks;
 {
     public partial class Team
     {
-        private void ClList()
-        {
-            if (s.Count == 0)
-            {
-                cotrue = false;
-            }
-            else
-            {
-                cotrue = true;
-            }
-        }
+        
 
         public void AddStaff(Staff st)
         {
@@ -50,36 +40,8 @@ using System.Threading.Tasks;
             {
                 s.AddRange(sc);
             }
-
-            ClList();
         }
 
-        public void ChStaff()
-        {
-
-            if (hcoach.Count == 0)
-            {
-                s.Clear();
-                Console.Write("Team must to have a Head Coach ");
-            }
-            else if (hcoach.Count > 1)
-            {
-                s.Clear();
-                Console.Write("Team cannot have more then one Head Coach ");
-            }
-            else if (invalidinputstaff.Count != 0)
-            {
-                s.Clear();
-                Console.WriteLine("Some of the staff do not have valid input, corrections are needed ");
-            }
-
-            else
-            {
-                foreach (var item in s)
-                {
-                    Console.WriteLine($"{item.Fname} {item.Lname} - {item.Type}");
-                }
-            }
-        }
+        
     }
 }

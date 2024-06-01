@@ -58,9 +58,18 @@ namespace Basketball
             }
             else
             {
-                if (!t1.cotrue || !t2.cotrue)
+                if (t1.hcoach.Count == 0 || t2.hcoach.Count == 0)
                 {
-                    Console.WriteLine("An error occurred when entering data for staff - check the input in both teams ");
+                    Console.Write("Team must to have a Head Coach check input for both teams");
+                }
+                else if (t1.hcoach.Count > 1 || t2.hcoach.Count > 1)
+                {
+                    
+                    Console.Write("Team cannot have more then one Head Coach ");
+                }
+                else if (t1.invalidinputstaff.Count != 0 || t2.invalidinputstaff.Count != 0)
+                {
+                    Console.WriteLine("Some of the staff do not have valid input, corrections are needed ");
                 }
                 else
                 {
