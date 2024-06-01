@@ -72,7 +72,7 @@ namespace Basketball
 
                     else if (t1.p.Count < mingameplayers && t1.p.Count > 0 || t2.p.Count < mingameplayers && t2.p.Count > 0)
                     {
-                        Console.WriteLine("Not enough players in one of the team to play this game !!!");
+                        Console.WriteLine("Not enough players in one of the team to play this game you should have minimum" + mingameplayers + " players in rotation!!!");
                     }
                     else
                     {
