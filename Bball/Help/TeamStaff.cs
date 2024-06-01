@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 {
     public partial class Team
     {
-        
+
 
         public void AddStaff(Staff st)
         {
@@ -27,6 +27,13 @@ using System.Threading.Tasks;
                     invalidinputstaff.Add(sc[i].Type);
                 }
             }
+            ARange(sc);
+        }
+
+
+
+        private void ARange(List<Staff> li)
+        {
             if (hcoach.Count != 1)
             {
                 s.Clear();
@@ -38,7 +45,7 @@ using System.Threading.Tasks;
             }
             else
             {
-                s.AddRange(sc);
+                s.AddRange(li);
             }
         }
 

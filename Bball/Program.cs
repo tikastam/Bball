@@ -45,7 +45,7 @@ namespace Basketball
             Staff PZ = new Staff("Predrag", "Zimonjic", "FitnessCoach");
             Staff MM = new Staff("Milan", "Macvan", "YouthCoach");
 
-            Partizan.AddStaff(ZO);
+            //Partizan.AddStaff(ZO);
             Partizan.AddStaff(BCA);
             Partizan.AddStaff(PZ);
             Partizan.AddStaff(AM);
