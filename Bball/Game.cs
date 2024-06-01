@@ -73,10 +73,15 @@ namespace Basketball
                 }
                 else
                 {
-                    Console.WriteLine($"\n{competition} game {DGame}\n");
-                    if (t1.p.Count == 0 || t2.p.Count == 0)
+                    
+                    if(t1.dupplayer != 0 || t2.dupplayer != 0)
                     {
-                        Console.WriteLine(string.Empty);
+                        Console.WriteLine("You have a multiple players with the same Shirt Number in one of the clubs, Check your input !!! ");
+                    }
+                    else if (t1.invplayerinput != 0 || t2.invplayerinput != 0)
+                    {
+                        
+                        Console.Write("Choose between PG, SG, SF, PF or C for position entry in both teams");
                     }
 
                     else if (t1.p.Count < mingameplayers && t1.p.Count > 0 || t2.p.Count < mingameplayers && t2.p.Count > 0)
@@ -85,6 +90,7 @@ namespace Basketball
                     }
                     else
                     {
+                        Console.WriteLine($"\n{competition} game {DGame}\n");
                         Result(t1, t2);
                     }
                 }
