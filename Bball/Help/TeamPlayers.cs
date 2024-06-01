@@ -28,7 +28,7 @@ namespace Basketball
             {
                 if (pwd[i].Position == Player.plinvalid)
                 {
-                    invplayerinput.Add(pwd[i].Position);
+                    invplayerinput ++;
                 }
             }
         }
@@ -37,36 +37,24 @@ namespace Basketball
         {
             p.Add(pl);
             HelpPlayer();
+            Players();
 
-            if (dupplayer != 0)
-            {
-                p.Clear();
-                Players();
-            }
-            if (invplayerinput.Count != 0)
-            {
-                p.Clear();
-                Players();
-            }
+
         }
 
         public void Players()
         {
             if (dupplayer != 0)
             {
+                p.Clear();
                 Console.WriteLine("You have a multiple players with same Shirt Number, Check your input !!! ");
             }
-            if (invplayerinput.Count != 0)
+            if (invplayerinput != 0)
             {
+                p.Clear();
                 Console.Write("Choose between PG, SG, SF, PF or C for position entry ");
             }
-            else
-            {
-                foreach (var item in p)
-                {
-                    Console.WriteLine($"{item.ShNum} {item.FirstName} {item.LastName} {item.Position} {item.Heigth}cm {item.Age}");
-                }
-            }
+            
         }
     }
 }

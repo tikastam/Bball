@@ -20,9 +20,9 @@ namespace Basketball
 
         private int dupplayer = 0;
 
-        public List<string> hcoach = new List<string>();
+        private int invplayerinput = 0;
 
-        private List<string> invplayerinput = new List<string>();
+        public List<string> hcoach = new List<string>();
 
         private List<Player> pwd = new List<Player>();
 
