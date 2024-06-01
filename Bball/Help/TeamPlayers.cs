@@ -47,7 +47,7 @@ namespace Basketball
             if (dupplayer != 0)
             {
                 p.Clear();
-                Console.WriteLine("You have a multiple players with same Shirt Number, Check your input !!! ");
+                Console.WriteLine("You have a multiple players with the same Shirt Number, Check your input !!! ");
             }
             if (invplayerinput != 0)
             {
