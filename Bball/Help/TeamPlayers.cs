@@ -21,7 +21,7 @@ namespace Basketball
             {
                 if (pwd[i].ShNum == pwd[i + 1].ShNum)
                 {
-                    dupplayer.Add(pwd[i].ShNum);
+                    dupplayer++;
                 }
             }
             for (int i = 0; i < pwd.Count; i++)
@@ -38,7 +38,7 @@ namespace Basketball
             p.Add(pl);
             HelpPlayer();
 
-            if (dupplayer.Count != 0)
+            if (dupplayer != 0)
             {
                 p.Clear();
                 Players();
@@ -52,7 +52,7 @@ namespace Basketball
 
         public void Players()
         {
-            if (dupplayer.Count != 0)
+            if (dupplayer != 0)
             {
                 Console.WriteLine("You have a multiple players with same Shirt Number, Check your input !!! ");
             }
