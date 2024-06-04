@@ -62,7 +62,7 @@ namespace Basketball
             Player MH = new Player(11, "Mario", "Hezonja", "PF", 203, 29);
             Player WT = new Player(22, "Walter", "Tavares", "C", 221, 32);
             Player FCA = new Player(8, "Facundo", "Campazo", "PG", 180, 32);
-            Player GD = new Player(14, "Gabriel", "Deck", "PF", 200, 32);
+            Player GD = new Player(14, "Gabriel", "Deck", "SF", 200, 32);
             Player GY = new Player(55, "Gerson", "Yabusele", "PF", 202, 28);
 
             RealMadrid.AddPlayer(SL);
