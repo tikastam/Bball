@@ -24,7 +24,7 @@ using System.Threading.Tasks;
                 }
                 else if (sc[i].Type == Staff.coinv)
                 {
-                    invalidinputstaff.Add(sc[i].Type);
+                    invalidinputstaff++;
                 }
             }
             ARange(sc);
@@ -39,7 +39,7 @@ using System.Threading.Tasks;
                 s.Clear();
             }
 
-            else if (invalidinputstaff.Count != 0)
+            else if (invalidinputstaff != 0)
             {
                 s.Clear();
             }

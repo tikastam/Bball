@@ -67,7 +67,7 @@ namespace Basketball
                     
                     Console.Write("Team cannot have more then one Head Coach ");
                 }
-                else if (t1.invalidinputstaff.Count != 0 || t2.invalidinputstaff.Count != 0)
+                else if (t1.invalidinputstaff != 0 || t2.invalidinputstaff != 0)
                 {
                     Console.WriteLine("Some of the staff do not have valid input, corrections are needed ");
                 }
