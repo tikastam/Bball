@@ -18,9 +18,9 @@ namespace Basketball
 
         public List<Staff> s = new List<Staff>();
 
-        public int dupplayer = 0;
+        public int dupplayer;
 
-        public int invplayerinput = 0;
+        public int invplayerinput;
 
         public List<string> hcoach = new List<string>();
 
